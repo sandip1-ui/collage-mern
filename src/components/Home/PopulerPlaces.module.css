@@ -1,0 +1,85 @@
+.place{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.tital{
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  font-size:4vh;
+  font-weight: 600;
+  text-decoration:underline;
+  background:linear-gradient(90deg,white,rgb(0, 162, 255),white);
+}
+
+.cardcontainer{
+  width:100%;
+  height: 92%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-flow:row;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.card{
+  margin: 10px;
+  width: 95%;
+  height: 200px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px hsl(240, 3%, 6%);
+  background-color:transparent;
+  border: 3px solid rgb(39, 10, 232);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1%;
+}
+
+/* .card img:hover{
+  width:210px;
+
+} */
+.card img{
+  width: 35%;
+  height: 96%;
+  border-radius: 5px;
+  
+  background-color: rgb(92, 17, 231);
+}
+.card .pera{
+  width: 62%;
+  height: 96%;
+  font-size: 17px;
+  color:black;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+.pera1{
+  color: black;
+}
+.pera2{
+  color: rgb(99, 119, 102);
+}
+
+@media screen and (max-width:1200px){
+  .cardcontainer{
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width:800px){
+  .cardcontainer{
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width:500px){
+  .card{
+    height: 180px;;
+  }
+}

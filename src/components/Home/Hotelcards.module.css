@@ -1,0 +1,47 @@
+.card{
+  margin: 10px;
+  min-width: 470px;
+  height: 200px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px hsl(240, 3%, 6%);
+  background-color:transparent;
+  border: 3px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1%;
+}
+
+/* .card img:hover{
+  width:210px;
+
+} */
+.card img{
+  width: 35%;
+  height: 96%;
+  border-radius: 5px;
+  
+  background-color: red;
+}
+.card .pera{
+  width: 62%;
+  height: 96%;
+  font-size: 17px;
+  color:rgb(55, 232, 28);
+  font-weight: 550;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+.pera1{
+  color: rgb(14, 12, 12);
+}
+.pera2{
+  color: rgb(124, 124, 147);
+}
+@media screen and (max-width:500px){
+  .card{
+    height: 180px;;
+  }
+}

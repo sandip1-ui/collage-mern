@@ -1,0 +1,66 @@
+.container{
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(34, 255, 0);
+  top: 50px;
+  right: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.allfilters{
+  width: 200px;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  box-shadow: 0 0 5px;
+  position: absolute;
+  top: 80px;
+  right: 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.allfilters button{
+  height: 30px;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.onclick1{
+  background-color: blue;
+}
+.onclick2{
+  background-color:rgb(5, 157, 5);
+}
+.priceinput{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.priceinput input{
+  width: 43%;
+  margin: 1%;
+  border-radius: 5px;
+  border: 2px solid darkslateblue;
+}
+.priceinput input::placeholder{
+  color:blue
+
+}
+.priceinput button{
+    display: none;
+}
+

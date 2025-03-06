@@ -1,0 +1,48 @@
+.main{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hoteldetails{
+  font-size: 30px;
+  font-weight:bold;
+  display: flex;
+  flex-direction: column;
+  width:55%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+  margin: 5px;
+  gap: 10px;
+}
+.hoteldetails img{
+  border-radius: 5px;
+}
+.span2{
+  color: blue;
+  font-size: 20px;
+}
+.hoteldetails p{
+  font-size: 18px;
+  color: gray;
+}
+.faccilities{
+  font-size: 15px;
+  display: flex;
+}
+.faccilities li{
+  list-style: none;
+  margin: 10px;
+  background-color: rgb(227, 224, 224);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: blue;
+}
+.hotelform{
+  width: 30%;
+  height: 300px;
+  box-shadow: 0 0 10px;
+  margin: 5px;
+  border-radius: 5px;
+}

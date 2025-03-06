@@ -1,0 +1,152 @@
+.home{
+  height: 100vh;
+  background-image: url(/images/pic.jpg);
+  object-fit: cover;
+  background-position: center center;
+  background-size: max(1550px,800px); 
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  height:100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.inputs{
+  width: 50%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background:linear-gradient(45deg,rgb(247, 25, 25),orange,rgb(16, 216, 16));
+  flex-wrap: wrap;
+  padding: 4px;
+  transition: 1s;
+  gap:5px;
+  position: relative;
+}
+/* .inputs:hover{
+  padding: 5px;
+  box-shadow: -10px -10px 10px black;
+  background-color: red;
+} */
+.search_bar{
+  width: 100%;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.search{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search_bar img{
+  width: 10%;
+  height: 30px;
+}
+.search_bar input{
+  width: 88%;
+  font-size: 23px;
+  background-color:white;
+  border: 2px solid white;
+  position:relative;
+  outline: none;
+}
+.option{
+  position: absolute;
+  top: 70px;
+  width: 98%;
+  max-height: 200px;
+  border-radius: 5px;
+  background-color:rgb(1, 1, 105);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  color: white;
+  font-weight: 600;
+}
+.option::-webkit-scrollbar{
+display: none;
+}
+.optionlist{
+  margin-top: 2%;
+  height: 15%;
+  list-style: square;
+  align-items: left;
+  width: 90%;
+  font-size: 20px;
+}
+
+.inputs .i2{
+  width: 94%;
+  font-size: 20px;
+  outline:none;
+  border: 1px solid white;
+  top: 0px;
+  padding-left: 5px;
+}
+.date{
+  position: relative;
+  display: flex;
+  width:100%;
+  gap:1%;
+}
+.date1{
+  width: 49.5%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.details{
+  width: 100%;
+  position: relative;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+}
+
+.adult,.child,.room{
+  width: 40%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  height: 90%;
+}
+.adult input,.child input,.room input{
+ width: 30%;
+  background-color: transparent;
+  border: none;
+  direction: rtl;
+  border-radius: 3px;
+} 
+.adult label,.child label,.room label{
+   width: 65%;
+}
+
+.input_text{
+  margin: 0px;
+  padding: 0px;
+}
+.buttonstyle{
+  background-color:greenyellow;
+  width:100px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 540;
+}
