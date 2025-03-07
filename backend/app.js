@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express=require('express');
 const router = require('./routes/user');
 const { MongoConnect } = require('./utils/database');
@@ -14,6 +15,6 @@ const PORT=8080;
 MongoConnect(()=>{
 
   app.listen(8080,()=>{
-    console.log(`server run on port :${PORT}`);
+    console.log(`server run on port :${PORT}`); 
   }) 
 })

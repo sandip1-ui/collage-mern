@@ -13,6 +13,8 @@ import AllHomeComponents from './components/Home/AllHomeComponents.jsx'
 import { Provider } from 'react-redux'
 import blogStore from './store/index.js'
 import HotelPage from './components/Hotels/HotelPage.jsx'
+import LogIn from './components/Home/LogIn.jsx'
+import PlacePage from './components/places/PlacePage.jsx'
 
 const router=createBrowserRouter([
   {
@@ -23,11 +25,18 @@ const router=createBrowserRouter([
       element:<AllHomeComponents></AllHomeComponents>
     },
       {
-      path:'/hotels/:placename/',
+      path:'/hotels/:placename',
       element:<AllHotels></AllHotels>,
     },
     {path:'/hotels/:placename/:hotelname',
       element:<HotelPage></HotelPage>
+    },
+      {
+      path:'/explore/:placename',
+      element:<></>,
+    },
+    {path:'/explore/:placename/:location',
+      element:<PlacePage></PlacePage>
     },
     {
       path:'/blogs',
@@ -41,8 +50,12 @@ const router=createBrowserRouter([
   ]
   },
   {
-    path:'/Register',
+    path:'/register',
     element:<Register></Register>
+  },
+  {
+    path:'/login',
+    element:<LogIn></LogIn>
   },
   {
     path:'/contact-us',

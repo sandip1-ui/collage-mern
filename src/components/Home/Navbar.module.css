@@ -93,7 +93,7 @@
   height: 37px;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 0 7px rgb(237, 160, 88);
+  box-shadow: 0 0 7px rgb(11, 176, 241);
   transition: .5s;
 }
 /* .b1:hover{
@@ -102,6 +102,12 @@
 } */
 .b1{
   background:linear-gradient(45deg,violet,blue,skyblue,green,yellow,orange,red);
+  color:white;
+  font-size: 17px;
+  font-weight: 550;
+}
+.b2{
+  background:linear-gradient(45deg,blue,rgb(46, 46, 200),rgb(46, 46, 150),rgb(36, 36, 100),rgb(26, 26, 50),rgb(16, 16, 0));
   color:white;
   font-size: 17px;
   font-weight: 550;

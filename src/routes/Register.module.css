@@ -39,3 +39,14 @@ h2 {
 .submit_btn:hover {
   background-color: #45a049;
 }
+.error_message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(246, 136, 136);
+  border-radius: 5px;
+  padding: 5px;
+  width: 94%;
+  background-color: rgb(251, 216, 216);
+  font-size: 17px;
+}

@@ -7,6 +7,10 @@ const Navbar=()=>{
         <img src="/logos/logo.svg" alt=""/>
         
         <div className={style.register}>
+
+            <Link to="/login">
+                <button className={style.b2}>Log in</button>
+            </Link>
             <Link to="/register">
                 <button className={style.b1}>Register</button>
             </Link>

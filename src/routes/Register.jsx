@@ -1,14 +1,13 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import style from './Register.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const Register=()=>{
-    console.log("i am outside")
+     const [error,setError]=useState();
      const navigate=useNavigate();
      const name=useRef();
      const email=useRef();
      const password=useRef();
-     const confirmPassword=useRef();
 
      const postData=(event)=>{
         event.preventDefault();
@@ -16,15 +15,13 @@ const Register=()=>{
             name:name.current.value,
             email:email.current.value,
             password:password.current.value,
-            confirmPassword:confirmPassword.current.value,
         })
-        console.log(postObj)
         fetch("http://localhost:8080/register",{
             method:"POST",
         body:postObj,
     headers:{"Content-type":"application/json"},} 
         ).then(res=>res.json()).then((data)=>{
-            console.log("i am posted...",data)
+            setError(data.msg)
         });
        //return navigate("/");
      }
@@ -47,11 +44,8 @@ const Register=()=>{
             <input ref={password} className={style.input} type="password" id="password" required/>
             <div id="passwordError" className={style.error}></div>
         </div>
-        <div>
-            <label className={style.label} htmlFor="confirmPassword">Confirm Password</label>
-            <input ref={confirmPassword} className={style.input} type="password" id="confirmPassword" required/>
-            <div id="confirmPasswordError" className={style.error}></div>
-        </div>
+        
+        {error && <p className={style.error_message}>{error}</p>}
         <button type="submit" className={style.submit_btn}>Register</button>
     </form>
 </div>)
