@@ -64,7 +64,7 @@ const Inputs=({setLocationList,showLocatioList})=>{
     <div className={style.search_bar}>
         <label htmlFor="destination" className={style.input_text}>Destination</label>
         <div className={style.search}>
-            <input id="input" ref={searchInput} type="text" placeholder="Enter your destination" onClick={(event)=>{event.stopPropagation();setLocationList(true)}} onKeyUp={(action)=>showLocations(action)} required autoComplete="off"/>
+            <input id="destination" ref={searchInput} type="text" placeholder="Enter your destination" onClick={(event)=>{event.stopPropagation();setLocationList(true)}} onKeyUp={(action)=>showLocations(action)} required autoComplete="off"/>
             <img src="./logos/search.svg" alt=""/>
         </div>
     </div>
@@ -72,28 +72,28 @@ const Inputs=({setLocationList,showLocatioList})=>{
 
     <div className={style.date}>
       <div className={style.date1}>
-          <label htmlFor="date" className={style.input_text}>Check-in</label>
-          <input className={style.i2} id="i3" type="date" required/>
+          <label htmlFor="checkin" className={style.input_text}>Check-in</label>
+          <input className={style.i2} id="checkin" type="date" required/>
       </div>
       <div className={style.date1}>
-          <label htmlFor="date" className={style.input_text}>Check-out</label>
-          <input className={style.i2} id="i4" type="date" required/>
+          <label htmlFor="checkout" className={style.input_text}>Check-out</label>
+          <input className={style.i2} id="checkout" type="date" required/>
       </div>
     </div>
 
     <div className={style.details} >
-      <div className={style.adult} id="adult">
-        <input ref={adultInput} type="text"  required/>
+      <div className={style.adult}>
+        <input id="adult" ref={adultInput} type="text"  required/>
         <label htmlFor="adult">- Adult</label>
       </div>
 
-      <div className={style.child} id="child">                  
-        <input ref={childInput} type="text"  required/> 
+      <div className={style.child}>                  
+        <input id="child" ref={childInput} type="text"  required/> 
         <label htmlFor="child">- Child</label>
       </div>
 
-      <div className={style.room} id="room">
-         <input ref={roomInput} type="text"  required/> 
+      <div className={style.room}>
+         <input id="room" ref={roomInput} type="text"  required/> 
          <label htmlFor="room">-Room</label>
       </div>
          

@@ -1,16 +1,13 @@
-import { useContext } from 'react';
 import style from './AllBlogs.module.css'
 import { MdOutlineCreateNewFolder } from "react-icons/md";
 import {Link} from 'react-router'
 import { useSelector } from 'react-redux';
 
-
 const Blogs=()=>{
+ 
   const {travelBlogs}=useSelector(store=>store.blogs)
-  console.log('i am blogs')
-  const travelBlog=travelBlogs;
   return(<div className={style.container}>
-    {travelBlog.map(travelBlog=><div key={travelBlog.author} className={style.supcard}>
+    {travelBlogs.map(travelBlog=><div key={travelBlog.author} className={style.supcard}>
       <div className={style.card} >
           <h2>{travelBlog.title}</h2>
           <span>Poblished by <u>{travelBlog.author}</u> on {travelBlog.date}</span>

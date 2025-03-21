@@ -50,3 +50,12 @@ h2 {
   background-color: rgb(251, 216, 216);
   font-size: 17px;
 }
+.passworddiv{
+  position: relative;
+}
+.hide{
+  position: absolute;
+  top: 52px;
+  right: 35px;
+  cursor: pointer;
+}

@@ -15,6 +15,7 @@ import blogStore from './store/index.js'
 import HotelPage from './components/Hotels/HotelPage.jsx'
 import LogIn from './components/Home/LogIn.jsx'
 import PlacePage from './components/places/PlacePage.jsx'
+import Explore from './components/places/explore.jsx'
 
 const router=createBrowserRouter([
   {
@@ -31,13 +32,6 @@ const router=createBrowserRouter([
     {path:'/hotels/:placename/:hotelname',
       element:<HotelPage></HotelPage>
     },
-      {
-      path:'/explore/:placename',
-      element:<></>,
-    },
-    {path:'/explore/:placename/:location',
-      element:<PlacePage></PlacePage>
-    },
     {
       path:'/blogs',
       element:<AllBlogs></AllBlogs>,
@@ -46,6 +40,16 @@ const router=createBrowserRouter([
       },{path:'create-blog',
         element:<CreateBlogs></CreateBlogs>},
       ]
+    },
+    {path:'/explore',
+      element:<Explore></Explore>
+    },
+    {
+     path:'/explore/:placename',
+     element:<></>,
+    },
+    {path:'/explore/:placename/:location',
+      element:<PlacePage></PlacePage>
     },
   ]
   },

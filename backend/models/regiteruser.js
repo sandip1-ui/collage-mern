@@ -9,12 +9,12 @@ module.exports=class RegisterUser{
   }
   async save(){
     const db=getDB();
-    const getData=await db.collection('register').insertOne(this);
+    const getData=await db.collection('userregister').insertOne(this);
     this._id=getData.insertedId.toString();
   }
   static async exist(email){
     const db=getDB();
-    return await db.collection('register').findOne({email:email});
+    return await db.collection('userregister').findOne({email:email});
   }
   generateToken(){
     return jwt.sign({

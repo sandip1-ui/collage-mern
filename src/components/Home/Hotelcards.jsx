@@ -3,7 +3,7 @@ import style from './Hotelcards.module.css'
 import { useDispatch } from 'react-redux';
 import { hotelInfoActions } from '../../store/hotelinfo';
 const Hotelcards=({item})=>{
-  const dispatch=useDispatch()
+  const dispatch=useDispatch();
   const setItem=()=>{
      dispatch(hotelInfoActions.setHotelInfo(item));
   }

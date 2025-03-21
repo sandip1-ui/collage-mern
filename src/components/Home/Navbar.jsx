@@ -18,9 +18,10 @@ const Navbar=()=>{
     </div>
 <ul className={style.navbar} >
     
-    <li><img src="/logos/home.png" alt="" height="18px"/><Link to="/">Home</Link></li>
-    <li><img src="/logos/percent.png" alt="" height="18px"/><Link to="/blogs">Blogs</Link></li>
-    <li><img src="/logos/group.png" height="18px" alt=""/><Link to="/about">About</Link></li>
+    <li><img src="/logos/home.png" alt="" height="17px"/><Link to="/">Home</Link></li>
+    <li><img src="/logos/percent.png" alt="" height="17px"/><Link to="/blogs">Blogs</Link></li>
+    {/* <li><img src="/logos/group.png" height="18px" alt=""/><Link to="/about">About</Link></li> */}
+    <li><img src="/logos/contact.svg" alt="" height="18px"/><Link to="/explore">Explore</Link></li>
     <li><img src="/logos/contact.svg" alt=""/><Link to="/contact-us">Contact</Link></li>
 </ul>
 

@@ -13,12 +13,7 @@ const CreateBlogs=()=>{
   const content=useRef();
   const tags=useRef();
 
-  // title: "Exploring the Hidden Gems of Bali",
-  //   author: "Sophia Carter",
-  //   date: "2024-02-10",
-  //   content: "Bali is more than just beaches and nightlife. Explore the serene waterfalls, lush rice terraces, and authentic cultural villages that make this island truly special...",
-  //   tags: [
-
+  
   const addBlogItems=(event)=>{
     event.preventDefault();
     const date=new Date().toLocaleDateString();
@@ -42,19 +37,19 @@ const CreateBlogs=()=>{
   <form className={style.formdetails} onSubmit={addBlogItems}>
        <div className={style.input}>
         <label htmlFor="heading">Blog Heading</label>
-        <input type="text" ref={heading} placeholder="Enter heading for your blog"/>
+        <input id="heading" type="text" ref={heading} placeholder="Enter heading for your blog" required/>
        </div>
        <div className={style.input}>
         <label htmlFor="name">Auther Name</label>
-        <input type="text" ref={name} placeholder="Enter name"/>
+        <input id="name" type="text" ref={name} placeholder="Enter name" required/>
        </div>
        <div className={style.input}>
         <label htmlFor="content">Blog Content</label>
-        <textarea ref={content} id="" placeholder="Enter blog content" rows="4"></textarea>
+        <textarea ref={content} id="content" placeholder="Enter blog content" rows="4" required></textarea>
        </div>
        <div className={style.input}>
         <label htmlFor="tags">Blog Tags</label>
-        <input type="text" ref={tags} placeholder="Enter heading for your blog"/>
+        <input id="tags" type="text" ref={tags} placeholder="Enter heading for your blog" required/>
        </div>
        <button type="submit">Submit</button>
   </form>

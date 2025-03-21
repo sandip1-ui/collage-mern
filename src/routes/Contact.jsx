@@ -9,19 +9,19 @@ const Contact=()=>{
     
     <form id="contactForm" action="">
       
-        <label className={style.label} for="name">Your Name</label>
+        <label className={style.label} htmlFor="name">Your Name</label>
         <input className={style.input} type="text" id="name" name="name" placeholder="Enter your name" required/>
         <div id="nameError" className={style.error}></div>
 
-        <label className={style.label} for="email">Your Email</label>
+        <label className={style.label} htmlFor="email">Your Email</label>
         <input className={style.input} type="email" id="email" name="email" placeholder="Enter your email" required/>
         <div id="emailError" className={style.error}></div>
 
-        <label className={style.label} for="subject">Subject</label>
+        <label className={style.label} htmlFor="subject">Subject</label>
         <input className={style.input} type="text" id="subject" name="subject" placeholder="Enter subject" required/>
         <div id="subjectError" className={style.error}></div>
 
-        <label className={style.label} for="message">Your Message</label>
+        <label className={style.label} htmlFor="message">Your Message</label>
         <textarea className={style.textarea} id="message" name="message" placeholder="Tell us about your trip or any inquiries" rows="6" required></textarea>
         <div id="messageError" className={style.error}></div>
 

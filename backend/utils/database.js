@@ -7,7 +7,7 @@ let _db;
 const MongoConnect=(callback)=>{
 
   MongoClint.connect(url).then(client=>{
-    _db=client.db('userdata');
+    _db=client.db('collage-mern');
   }).catch(err=>{
     console.log(err);
   });

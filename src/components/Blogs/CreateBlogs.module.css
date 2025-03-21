@@ -5,7 +5,7 @@
 .formdetails{
   width: 80%;
   max-width: 700px;
-  margin: 50px auto;
+  margin: 50px ;
   padding: 30px;
   background-color: #fff;
   border-radius: 8px;
@@ -20,18 +20,22 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 18px;
-  font-weight: 550;
+  font-size: 17px;
 }
 .input input,textarea{
+  width: 95%;
   border-radius: 5px;
-  padding: 0 8px;
+  padding: 8px 10px;
+  border: 2px solid rgb(181, 178, 178);
 }
 .formdetails button{
   margin-top: 15px;
-  background-color: lightgreen;
+  background:linear-gradient(lightgreen,green,darkgreen,black);
   padding: 0px 10px;
-  font-size: 20px;
-  width: 80px;
+  font-size: 23px;
+  font-weight: 500;
+  width: 100px;
+  border: none;
   border-radius: 5px;
+  color: white;
 }
